@@ -1,0 +1,135 @@
+body{
+    background-color: #dbf3ff;
+}
+
+h1{
+    font-size: xxx-large;
+}
+
+
+
+table{
+    margin: 2vh;
+}
+
+th,
+td {
+    border: 1px solid rgb(0, 0, 110);
+    text-align: center;
+}
+
+th {
+    background-color: slateblue;
+    color: aliceblue;
+
+    padding: 1vh;
+}
+
+tr:nth-child(odd) {
+    background-color: lightsteelblue;
+}
+
+tr:nth-child(even) {
+    background-color: antiquewhite;
+}
+
+div{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 50vw;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.crud{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+.crud button{
+    transition: .5s;
+    color: white;
+    background-color: darkblue;
+    border: none;
+    margin: 5px;
+    padding: 5px;
+
+    border-radius: 10px;
+}
+
+.crud button:hover{
+    transition: .5s;
+    scale: 1.1;
+}
+
+#modalAlumnos div{
+    display: flex;
+    flex-direction: column;
+}
+
+#accionesModal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#accionesModal button{
+    transition: .5s;
+    color: white;
+    background-color: darkblue;
+    border: none;
+    padding: 7px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#accionesModal button:hover{
+    transition: .5s;
+    scale: 1.1;
+    backdrop-filter: brightness(0.9);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.modalCancelar{
+    background-color: red !important;
+}
+
+.edit{
+    display: flex;
+    flex-direction: column;
+
+    border: 3px solid black;
+    border-radius: 10px;
+
+    width: 50%;
+}
+
+.edit input{
+    padding: 5px;
+    margin: 5px;
+    border: none;
+}

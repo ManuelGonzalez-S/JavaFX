@@ -1,0 +1,196 @@
+body{
+    background-color: lightblue;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul a:hover{
+    text-decoration: underline;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+#register{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#irRegistro{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#irRegistro button{
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: darkblue;
+    transition: .5s;
+
+    padding: 8px;
+}
+
+#irRegistro button:hover{
+    scale: 1.1;
+    cursor:pointer;
+    transition: .5s;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+    align-items: center;
+
+    padding-bottom: 10px;
+}
+
+#formulario div{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+
+    width: 100%;
+}
+
+#formulario div:last-child{
+    justify-content: center;
+}
+
+#nombre{
+    width: 50%;
+
+    height: 29px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+
+    border: none;
+}
+
+#nombre:focus{
+    outline: none;
+}
+
+.contraseña{
+    border: none;
+    background-color: rgba(0,0,0,0);
+}
+
+.contraseña:focus{
+
+    outline: none;
+}
+
+.visibleContra{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    cursor:pointer;
+}
+
+#sectionContra{
+    border-radius: 10px;
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    width: 50%;
+
+    background-color: white;
+
+    border: none;
+}
+
+#sectionContraRepetir{
+    border-radius: 10px;
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    width: 50%;
+
+    background-color: white;
+
+    border: none;
+}
+
+#ojoVisible{
+    max-height: 29px;
+}
+
+#ojoVisibleRepetir{
+    max-height: 29px;
+}
+
+#iniciar{
+    transition: .5s;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+
+    padding: 5px;
+}
+
+#iniciar:enabled{
+    background-color: darkblue;
+    color: white;
+}
+
+#iniciar:enabled:hover{
+    transition: .5s;
+    scale: 1.1;
+    cursor:pointer;
+}
+
+.noEncontrado{
+    color: red;
+}
+
+.encontrado{
+    color: green;
+}
+
+#iniciar:disabled{
+    cursor:not-allowed;
+}
+
+#formulario div b{
+    text-decoration: underline;
+}
+
+#mensajeBienvenida{
+    border: 13px solid green;
+
+    padding: 10px;
+
+    font-size: 2em;
+
+    display: none;
+}

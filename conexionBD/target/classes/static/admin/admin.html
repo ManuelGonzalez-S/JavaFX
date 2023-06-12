@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='css/style.css'>
+    <title>Porque si</title>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="../index.html">Ir a inicio de sesion</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <h1>CRUD</h1>
+
+    <section class="crud">
+        <h2>ALUMNOS</h2>
+        <button onclick="window.modalAlumnos.showModal()">+ CREAR</button>
+
+        <table id="alumnos">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Nota</th>
+                <th>Periodo</th>
+                <th>Acciones</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="alumnosEdit" class="edit">
+            <input class="inputAlumno" id="txtNombreAlumnoEdit" type="text" placeholder="Introduce el nombre del alumno aqui">
+            <input class="inputAlumno" id="txtPeriodoAlumnoEdit" type="text" placeholder="Introduce su periodo">
+            <input class="inputAlumno" id="txtNotaAlumnoEdit" type="number" placeholder="Introduce su nota">
+    </section>
+
+    <dialog id="modalAlumnos">
+        <div>
+            <input class="inputAlumno" id="txtNombreAlumno" type="text" placeholder="Introduce el nombre del alumno aqui">
+            <input class="inputAlumno" id="txtPeriodoAlumno" type="text" placeholder="Introduce su periodo">
+            <input class="inputAlumno" id="txtNotaAlumno" type="number" placeholder="Introduce su nota">
+            <div id="accionesModal">
+                <button id="botonAlumno" onclick="añadirAlumnos()" type="button"><b>Guardar</b></button>
+                <button class="modalCancelar" onclick="cerrarModalAlumnos();"><b>Cancelar</b></button>
+            </div>
+        </div>
+    </dialog>
+
+
+    <section class="crud">
+        <h2>USUARIOS</h2>
+        <button onclick="window.modalUsuarios.showModal()">+ CREAR</button>
+
+        <table id="usuarios">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Contraseña</th>
+                <th>Permisos</th>
+                <th>Acciones</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="usuariosEdit" class="edit">
+        <input class="inputAlumno" id="txtNombreUsuarioEdit" type="text" placeholder="Introduce el nombre del usuario aqui">
+        <input class="inputAlumno" id="txtContraseñaUsuarioEdit" type="text" placeholder="Introduce su contraseña">
+        <input class="inputAlumno" id="txtPermisosUsuarioEdit" type="number" placeholder="Introduce sus permisos">
+    </section>
+
+    <dialog id="modalUsuarios">
+        <div>
+            <input class="inputUsuario" id="txtNombreUsuario" type="text" placeholder="Introduce el nombre del usuario">
+            <input class="inputUsuario" id="txtContraseñaUsuario" type="text" placeholder="Introduce su contraseña">
+            <div id="accionesUsuarios">
+                <button id="boton" onclick="añadirUsuario()" type="button"><b>Guardar</b></button>
+                <button class="modalCancelar" onclick="cerrarModalUsuarios();"><b>Cancelar</b></button>
+            </div>
+        </div>
+    </dialog>
+</main>
+
+
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/app.js"></script>
+</html>

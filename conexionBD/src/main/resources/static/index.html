@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de sesion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+
+    </ul>
+</nav>
+
+<main>
+
+    <div id="login">
+        <section id="formulario" method="GET">
+            <h2>INICIO DE SESION</h2>
+            <div>
+                <label><b>Nombre</b>:</label>
+                <input id="nombre" autocomplete="off" type="text" placeholder="Introduce tu nombre">
+            </div>
+
+            <div>
+                <label><b>Contraseña</b>:</label>
+                <section id="sectionContra">
+                    <input id="contraseña" type="password" placeholder="Introduce tu contraseña">
+                    <button id="visibleContra"><img id="ojoVisible" src="img/ojoCerrado.png"></button>
+                </section>
+            </div>
+
+            <span id="mensajeError"></span>
+
+            <div>
+                <button type="submit" id="iniciar" onclick="validarUsuario()" disabled>Iniciar sesión</button>
+            </div>
+        </section>
+
+        <div id="irRegistro">
+            <p>¿No tienes cuenta?</p>
+            <a href="register/index.html">
+                <button>Registrarse</button>
+            </a>
+        </div>
+    </div>
+
+    <div id="mensajeBienvenida">
+        Bienvenido pepe
+    </div>
+
+</main>
+
+</body>
+<script src="app.js"></script>
+</html>

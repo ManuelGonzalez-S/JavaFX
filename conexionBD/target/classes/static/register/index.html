@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+<nav>
+    <ul>
+
+    </ul>
+</nav>
+<main>
+    <section id="register">
+        <section id="formulario" method="GET">
+            <h2>REGISTRO</h2>
+            <div>
+                <label><b>Nombre</b>:</label>
+                <input id="nombre" autocomplete="off" type="text" placeholder="Introduce tu nombre">
+            </div>
+
+            <span id="mensajeNombre"></span>
+
+            <div>
+                <label><b>Contraseña</b>:</label>
+                <section id="sectionContra">
+                    <input class="contraseña" id="contraseña" type="password" placeholder="Introduce tu contraseña">
+                    <button class="visibleContra" id="visibleContra"><img id="ojoVisible" src="../img/ojoCerrado.png"></button>
+                </section>
+            </div>
+
+            <span id="mensajeContrasenas" class="noEncontrado"></span>
+            <div>
+                <label><b>Repetir contraseña</b>:</label>
+                <section id="sectionContraRepetir">
+                    <input class="contraseña" id="contraseñaRepetir" type="password" placeholder="Introduce tu contraseña">
+                    <button class="visibleContra" id="visibleContraRepetir"><img id="ojoVisibleRepetir" src="../img/ojoCerrado.png"></button>
+                </section>
+            </div>
+
+            <span id="mensajeError"></span>
+
+            <div>
+                <button type="submit" id="iniciar" onclick="validarUsuario()" disabled>Registrarse</button>
+            </div>
+        </section>
+
+        <div id="irRegistro">
+            <p>¿No tienes cuenta?</p>
+            <a href="../index.html">
+                <button>Iniciar sesión</button>
+            </a>
+        </div>
+    </section>
+
+    <div id="mensajeBienvenida">
+        Bienvenido pepe
+    </div>
+</main>
+
+</body>
+<script src="js/app.js"></script>
+</html>
